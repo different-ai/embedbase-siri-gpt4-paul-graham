@@ -11,7 +11,8 @@ const add = (title: string, blogPost: string) => {
             document_id: title,
             document_path: title,
             document_content: blogPost,
-            document_embedding_format: `Title:\n${title}\nContent:\n${blogPost}`,
+            document_tags: [],
+            document_embedding_format: `${title}\n\n${blogPost}`,
         }],
     };
     fetch(url, {
@@ -41,16 +42,24 @@ router.addDefaultHandler(async ({ enqueueLinks, log }) => {
 router.addHandler('detail', async ({ request, page, log }) => {
     const title = await page.title();
     // body > table > tbody > tr > td:nth-child(3)
-    const blogPost = await page.locator('body').textContent();
+    const blogPost = await page.locator('body > table > tbody > tr > td:nth-child(3)').textContent();
     if (!blogPost) {
         log.info(`no blog post found for ${title}, skipping`);
         return;
     }
     log.info(`${title}`, { url: request.loadedUrl });
-    const d = {
-        url: request.loadedUrl,
-        title,
-        blogPost,
-    };
-    await Promise.all([Dataset.pushData(d), add(title, blogPost)]);
+    // split blog post in chunks on the \n\n
+    const chunks = blogPost.split(/\n\n/);
+    if (!chunks) {
+        log.info(`no blog post found for ${title}, skipping`);
+        return;
+    }
+    await Promise.all(chunks.flatMap((chunk) => {
+        const d = {
+            url: request.loadedUrl,
+            title: title,
+            blogPost: chunk,
+        };
+        return Promise.all([Dataset.pushData(d), add(title, chunk)]);
+    }));
 });
