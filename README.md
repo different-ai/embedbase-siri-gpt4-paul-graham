@@ -1,8 +1,6 @@
 # embedbase-paul-graham
 
-
-
-WIP!!!
+[Don’t want to handle infra? We’re launching a hosted version soon. Just click here to be first to know when it comes out](https://embedbase.anotherai.co).
 
 This is an example of how to use [Embedbase](https://github.com/another-ai/embedbase) to build a search engine for [Paul Graham's essays](http://www.paulgraham.com/articles.html).
 There are examples of querying the index using [terminal](linkhere) or [Apple Siri Shortcuts](linkhere).
@@ -11,7 +9,7 @@ There are examples of querying the index using [terminal](linkhere) or [Apple Si
 
 If you just want to try the end result, you can use the sandboxed version of the index here: [https://embedbase-paul-graham-c6txy76x2q-uc.a.run.app](https://embedbase-paul-graham-c6txy76x2q-uc.a.run.app) with Apple Siri Shortcuts:
 
-SIRI LINK HERE
+https://www.youtube.com/shorts/9700RsFxMBc
 
 Or in the terminal:
 
@@ -57,7 +55,6 @@ npm i
 npm start
 ```
 
-
 ## Stack
 
 - [Embedbase](https://github.com/another-ai/embedbase)
@@ -69,6 +66,8 @@ npm start
 ## Deploy
 
 ## Cloud Run deployment
+
+[Don’t want to handle infra? We’re launching a hosted version soon. Just click here to be first to know when it comes out](https://embedbase.anotherai.co).
 
 ### Setup
 
@@ -104,5 +103,9 @@ gcloud run deploy embedbase-paul-graham \
   --region us-central1 \
   --allow-unauthenticated \
   --set-secrets /secrets/config.yaml=EMBEDBASE_PAUL_GRAHAM:1
+
+# getting cloud run url
+gcloud run services list --platform managed --region us-central1 --format="value(status.url)" --filter="metadata.name=embedbase-paul-graham"
 ```
+
 
