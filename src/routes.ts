@@ -3,8 +3,10 @@ import fetch from 'node-fetch';
 
 export const router = createPlaywrightRouter();
 
+const baseUrl = process.argv[2] || 'http://localhost:8000';
+
 const add = (title: string, blogPost: string) => {
-    const url = 'http://localhost:8000/v1/search/refresh';
+    const url = `${baseUrl}/v1/search/refresh`;
     const data = {
         vault_id: 'paul',
         documents: [{
