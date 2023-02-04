@@ -37,7 +37,7 @@ const start = async () => {
     console.log('Currently using Embedbase server at', baseUrl);
     console.log('This is an interactive terminal that let you search in paul graham blog posts using semantic search');
     console.log('Try to run some queries such as "how to get rich"');
-    console.log('or "how to be pitch investor"');
+    console.log('or "how to pitch investor"');
     while (true) {
         const query = p('Enter a semantic query:');
         if (!query) {

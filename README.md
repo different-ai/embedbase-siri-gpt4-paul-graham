@@ -1,15 +1,70 @@
-# Crawlee + PlaywrightCrawler + TypeScript project
+# embedbase-paul-graham
+
+
 
 WIP!!!
 
+This is an example of how to use [Embedbase](https://github.com/another-ai/embedbase) to build a search engine for [Paul Graham's essays](http://www.paulgraham.com/articles.html).
+There are examples of querying the index using [terminal](linkhere) or [Apple Siri Shortcuts](linkhere).
+
+## Demo
+
+If you just want to try the end result, you can use the sandboxed version of the index here: [https://embedbase-paul-graham-c6txy76x2q-uc.a.run.app](https://embedbase-paul-graham-c6txy76x2q-uc.a.run.app) with Apple Siri Shortcuts:
+
+SIRI LINK HERE
+
+Or in the terminal:
+
 ```bash
+git clone https://github.com/another-ai/embedbase-paul-graham
+cd embedbase-paul-graham
+npm i
+npm run playground https://embedbase-paul-graham-c6txy76x2q-uc.a.run.app
+```
+
+## Quickstart
+
+
+```bash
+git clone https://github.com/another-ai/embedbase
+cd embedbase
+```
+
+```yaml
+# embedbase/config.yaml
+# https://app.pinecone.io/
+pinecone_index: "my index name"
+# replace this with your environment
+pinecone_environment: "us-east1-gcp"
+pinecone_api_key: ""
+
+# https://platform.openai.com/account/api-keys
+openai_api_key: "sk-xxxxxxx"
+# https://platform.openai.com/account/org-settings
+openai_organization: "org-xxxxx"
+```
+
+```bash
+docker-compose up
+```
+
+In another terminal:
+
+```bash
+git clone https://github.com/another-ai/embedbase-paul-graham
+cd embedbase-paul-graham
 npm i
 npm start
 ```
 
+
 ## Stack
 
+- [Embedbase](https://github.com/another-ai/embedbase)
+- Typescript
 - [Crawlee + Playwright crawler](https://crawlee.dev/docs/examples/playwright-crawler)
+- [Google Cloud Run](https://cloud.google.com/run) for deployment
+- [Apple Siri Shortcuts](linkhere.) for querying the index
 
 ## Deploy
 
