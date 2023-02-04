@@ -9,7 +9,10 @@ There are examples of querying the index using [terminal](linkhere) or [Apple Si
 
 If you just want to try the end result, you can use the sandboxed version of the index here: [https://embedbase-paul-graham-c6txy76x2q-uc.a.run.app](https://embedbase-paul-graham-c6txy76x2q-uc.a.run.app) with Apple Siri Shortcuts:
 
-https://www.youtube.com/shorts/9700RsFxMBc
+
+https://user-images.githubusercontent.com/25003283/216767004-3e0898e5-627b-4f15-85b1-1f05ed666ccf.mp4
+
+
 
 Or in the terminal:
 
