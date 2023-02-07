@@ -66,7 +66,7 @@ npm start
 - Typescript
 - [Crawlee + Playwright crawler](https://crawlee.dev/docs/examples/playwright-crawler)
 - [Google Cloud Run](https://cloud.google.com/run) for deployment
-- [Apple Siri Shortcuts](linkhere.) for querying the index
+- [Apple Siri Shortcuts](https://www.icloud.com/shortcuts/70b62f88a59643bbad8ef9cb3483533f) for querying the index
 
 ## Deploy
 
