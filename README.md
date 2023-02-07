@@ -1,6 +1,6 @@
 # embedbase-paul-graham
 
-This is an example of using Embedbase to power your product with semantic search in no time while reducing your cost by 90% thanks to our duplicate filtering algorithm.
+This is an example of using Embedbase to power your product with semantic search in a few lines of code.
 
 This repository goes in pair with this [blog post](https://louis030195.medium.com/search-paul-graham-essays-with-siri-building-an-embedding-powered-product-in-few-lines-of-code-c578b43d741).
 
