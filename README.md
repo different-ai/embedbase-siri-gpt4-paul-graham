@@ -111,7 +111,3 @@ gcloud run deploy embedbase-paul-graham \
 gcloud run services list --platform managed --region us-central1 --format="value(status.url)" --filter="metadata.name=embedbase-paul-graham"
 ```
 
-
-[Don’t want to handle infra? We’re launching a hosted version soon. Just click here to be first to know when it comes out](https://embedbase.anotherai.co).
-
-
