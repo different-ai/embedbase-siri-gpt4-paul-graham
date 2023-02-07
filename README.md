@@ -6,7 +6,7 @@ This repository goes in pair with this [blog post](https://louis030195.medium.co
 
 [Don’t want to handle infra? We’re launching a hosted version soon. Just click here to be first to know when it comes out](https://embedbase.anotherai.co).
 
-This is an example of how to use [Embedbase](https://github.com/another-ai/embedbase) to build a search engine for [Paul Graham's essays](http://www.paulgraham.com/articles.html).
+This is an example of how to use [Embedbase](https://github.com/another-ai/embedbase) to build a search engine for [Paul Graham's essays](http://www.paulgraham.com/articles.html) through Apple's Siri shortcut.
 
 ## Demo
 
