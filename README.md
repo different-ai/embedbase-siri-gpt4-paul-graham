@@ -1,12 +1,11 @@
 # embedbase-paul-graham
 
-This is an example of using Embedbase to power your product with semantic search in a few lines of code.
+This is an example of how to use [Embedbase](https://github.com/another-ai/embedbase) to build a search engine in a few lines of code for [Paul Graham's essays](http://www.paulgraham.com/articles.html) through Apple's Siri shortcut.
 
 This repository goes in pair with this [blog post](https://louis030195.medium.com/search-paul-graham-essays-with-siri-building-an-embedding-powered-product-in-few-lines-of-code-c578b43d741).
 
 [Don’t want to handle infra? We’re launching a hosted version soon. Just click here to be first to know when it comes out](https://embedbase.anotherai.co).
 
-This is an example of how to use [Embedbase](https://github.com/another-ai/embedbase) to build a search engine for [Paul Graham's essays](http://www.paulgraham.com/articles.html) through Apple's Siri shortcut.
 
 ## Demo
 
