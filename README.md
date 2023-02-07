@@ -1,13 +1,16 @@
 # embedbase-paul-graham
 
+This is an example of using Embedbase to power your product with semantic search in no time while reducing your cost by 90% thanks to our duplicate filtering algorithm.
+
+This repository goes in pair with this [blog post](https://louis030195.medium.com/search-paul-graham-essays-with-siri-building-an-embedding-powered-product-in-few-lines-of-code-c578b43d741).
+
 [Don’t want to handle infra? We’re launching a hosted version soon. Just click here to be first to know when it comes out](https://embedbase.anotherai.co).
 
 This is an example of how to use [Embedbase](https://github.com/another-ai/embedbase) to build a search engine for [Paul Graham's essays](http://www.paulgraham.com/articles.html).
-There are examples of querying the index using [terminal](linkhere) or [Apple Siri Shortcuts](linkhere).
 
 ## Demo
 
-If you just want to try the end result, you can use the sandboxed version of the index here: [https://embedbase-paul-graham-c6txy76x2q-uc.a.run.app](https://embedbase-paul-graham-c6txy76x2q-uc.a.run.app) with Apple Siri Shortcuts:
+If you just want to try the end result, you can use the sandboxed version of the index with this [Apple Siri Shortcut](https://www.icloud.com/shortcuts/70b62f88a59643bbad8ef9cb3483533f):
 
 
 https://user-images.githubusercontent.com/25003283/216767004-3e0898e5-627b-4f15-85b1-1f05ed666ccf.mp4
