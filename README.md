@@ -4,8 +4,6 @@ This is an example of how to use [Embedbase](https://github.com/another-ai/embed
 
 This repository goes in pair with this [blog post](https://louis030195.medium.com/search-paul-graham-essays-with-siri-building-an-embedding-powered-product-in-few-lines-of-code-c578b43d741).
 
-[Don’t want to handle infra? We’re launching a hosted version soon. Just click here to be first to know when it comes out](https://embedbase.anotherai.co).
-
 
 ## Demo
 
@@ -112,5 +110,8 @@ gcloud run deploy embedbase-paul-graham \
 # getting cloud run url
 gcloud run services list --platform managed --region us-central1 --format="value(status.url)" --filter="metadata.name=embedbase-paul-graham"
 ```
+
+
+[Don’t want to handle infra? We’re launching a hosted version soon. Just click here to be first to know when it comes out](https://embedbase.anotherai.co).
 
 
