@@ -6,7 +6,7 @@ export const router = createPlaywrightRouter();
 const baseUrl = process.argv[2] || 'http://localhost:8000';
 
 const add = (title: string, blogPost: string) => {
-    const url = `${baseUrl}/v1/vault`;
+    const url = `${baseUrl}/v1/pault`;
     const data = {
         documents: [{
             data: `${title}\n\n${blogPost}`,
