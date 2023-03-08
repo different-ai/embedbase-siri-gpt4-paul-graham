@@ -6,15 +6,10 @@ export const router = createPlaywrightRouter();
 const baseUrl = process.argv[2] || 'http://localhost:8000';
 
 const add = (title: string, blogPost: string) => {
-    const url = `${baseUrl}/v1/search/refresh`;
+    const url = `${baseUrl}/v1/vault`;
     const data = {
-        vault_id: 'paul',
         documents: [{
-            document_id: title,
-            document_path: title,
-            document_content: blogPost,
-            document_tags: [],
-            document_embedding_format: `${title}\n\n${blogPost}`,
+            data: `${title}\n\n${blogPost}`,
         }],
     };
     fetch(url, {
