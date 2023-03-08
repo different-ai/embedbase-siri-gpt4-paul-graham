@@ -5,9 +5,8 @@ import prompt from 'prompt-sync';
 const baseUrl = process.argv[2] || 'http://localhost:8000';
 
 const search = async (query: string) => {
-    const url = `${baseUrl}/v1/search`;
+    const url = `${baseUrl}/v1/paul/search`;
     const data = {
-        vault_id: 'paul',
         query,
     };
     return fetch(url, {
